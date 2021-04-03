@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "handlebars": "^4.7.6",
+    "hbs": "^4.1.1",
+    "nodemailer": "^6.5.0",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "name": "bajraexports",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaspreet842/Export-Import.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaspreet842/Export-Import/issues"
+  },
+  "homepage": "https://github.com/jaspreet842/Export-Import#readme",
+  "description": ""
+}
