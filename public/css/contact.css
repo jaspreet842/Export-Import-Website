@@ -80,8 +80,10 @@
 }
 
 .container .contactInfo .box .text h3{
+    font-size: 2rem;
     font-weight: 500;
     color: #00bcd4;
+    margin-bottom: 1rem;
 }
 
 .contactForm{

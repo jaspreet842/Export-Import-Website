@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-area {
+  /* margin-top: 250px; */
+  padding: 5% 0 1% 0;
+  background: linear-gradient(to right, #242424 0%, #242424 100%);
+  background: -moz-linear-gradient(left, #242424 0%, #242424 100%);
+  background: -webkit-linear-gradient(left, #242424 0%, #242424 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2749c4', endColorstr='#6085b2', GradientType=1);
+  color: #fff;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.single-footer {
+  width: 230px;
+}
+
+.single-footer:first-child {
+  width: 400px;
+}
+
+.single-footer h4 {
+  text-transform: capitalize;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.single-footer ul {
+  list-style: none;
+}
+
+.single-footer ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 1px;
+}
+
+.single-footer ul li a {
+  color: #fff;
+  transition: color .2s;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.single-footer ul li a:hover {
+  color: orange;
+}
+
+.single-footer ul li a i {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+#facebook:hover {
+  transform: scale(1.1);
+  background-color: #3d5b99;
+}
+
+#instagram:hover {
+  transform: scale(1.1);
+  background-color: #fb3958;
+}
+
+#twitter:hover {
+  transform: scale(1.1);
+  background-color: #00aced;
+}
+
+.copy {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width:600px) {
+  .main {
+    width: 320px;
+  }
+  .footer-wave-box {
+    display: none;
+  }
+  .single-footer:first-child, .single-footer {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    width: 320px;
+    padding-top: 10px;
+  }
+  .footer-wave-box {
+    top: -22px;
+  }
+  .single-footer {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .footer-wave-box {
+    top: -26px;
+  }
+}

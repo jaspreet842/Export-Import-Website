@@ -1,33 +1,28 @@
-/* -------------------------------- 
+/* Font Family */
 
-Primary style
-
--------------------------------- */
-
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+@font-face {
+  font-family: 'Butler';
+  src: url('../fonts/Butler/Butler_Medium.otf');
 }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+@font-face {
+  font-family: 'Butler Bold';
+  src: url('../fonts/Butler/Butler_Bold.otf');
 }
 
-body {
-  font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  background-color: #242424;
-  transition: background-color 1s ease-in-out;
+@font-face {
+  font-family: 'Butler Extra Bold';
+  src: url('../fonts/Butler/Butler_ExtraBold.otf');
 }
 
-svg {
-  max-width: 100%;
+@font-face {
+  font-family: 'Butler Light';
+  src: url('../fonts/Butler/Butler_Light.otf');
 }
 
-a {
-  text-decoration: none;
+@font-face {
+  font-family: 'Butler Extra Light';
+  src: url('../fonts/Butler/Butler_Ultra_Light.otf');
 }
 
 /* Scrolling Effects */
@@ -82,70 +77,6 @@ Main Components
 
 -------------------------------- */
 
-/* Pre-Loader Section */
-
-#preLoader {
-  background: #242424;
-  position: absolute;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#preLoader>h1 {
-  display: flex;
-  flex-direction: column;
-  font-size: 3rem;
-  color: white;
-  animation: scalePreLoader 2s linear 0s infinite normal;
-}
-
-@keyframes scalePreLoader {
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-#preLoader span {
-  height: 1px;
-  background-color: white;
-  width: 100%;
-  animation: preLoadLine 2s linear 0.1s 1 normal;
-}
-
-@keyframes preLoadLine {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.preLoaderDisappear {
-  animation: disappear 1s forwards;
-}
-
-@keyframes disappear {
-  100% {
-    opacity: 0;
-  }
-}
-
-/* -------------------------------- 
-
-Main Components 
-
--------------------------------- */
-
 /* Header Section */
 
 #header {
@@ -168,14 +99,14 @@ Main Components
 
 #headerContent div span {
   color: white;
-  font-family: 'Lato', sans-serif;
 }
 
 #headerContent #headerLogo {
   position: absolute;
   letter-spacing: 3px;
   top: 4em;
-  left: 6em;
+  left: 10%;
+  font-family: 'Butler Bold', serif;
   font-size: 2em;
   font-weight: 300;
   opacity: 0;
@@ -187,9 +118,10 @@ Main Components
 #headerContent #headerNametag {
   position: absolute;
   z-index: 1;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   top: 1.8em;
-  left: 3em;
+  left: 20%;
+  font-family: 'Butler Extra Bold', serif;
   font-size: 10rem;
   width: 37vw;
   font-weight: bold;
@@ -220,11 +152,43 @@ Main Components
   background: url('../img/headerPic.jpeg') no-repeat center center/cover;
   height: 90vh;
   width: 37vw;
-  right: 200px;
+  right: 10%;
   top: 30px;
   opacity: 0;
   animation: headNameTagBg 1s linear 1s 1 normal;
   animation-fill-mode: forwards;
+}
+
+@media (max-width:400px) {
+  #header #headerContent #headerLogo {
+    font-size: 1em !important;
+  }
+  #header #headerContent #headerNametag {
+    font-size: 6rem !important;
+  }
+}
+
+@media (max-width:600px) {
+  #header #headerContent #headerLogo {
+    font-size: 1.5em;
+  }
+  #header #headerContent #headerNametag {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #header #headerContent #headerLogo {
+    left: 1%;
+    top: 20%;
+  }
+  #header #headerContent #headerNametag {
+    left: 2%;
+    top: 45%;
+  }
+  #header #headerImage {
+    display: none;
+  }
 }
 
 /* -------------------------------- 
@@ -242,7 +206,6 @@ Main Components
 
 #aboutUs #aboutContent {
   padding: 10em 12em;
-  font-family: 'Lato', sans-serif;
   background: rgba(0, 0, 0, 0.7);
 }
 
@@ -258,24 +221,32 @@ Main Components
 #aboutUs #aboutContent #aboutHeading span {
   color: orange;
   text-decoration: underline;
+  font-family: 'Butler Bold', sans-serif;
+  letter-spacing: 2px;
+  font-size: 3rem;
 }
 
 #aboutUs #aboutContent #aboutPhrase {
-  width: 30vw;
+  font-family: 'Butler Light', sans-serif;
   font-size: 2em;
   margin-bottom: 2em;
+  width: 60%;
 }
 
 #aboutUs #aboutContent #aboutPara {
-  width: 65vw;
+  width: 60%;
+  font-family: 'Butler Extra Light', sans-serif;
+  font-weight: 600;
   font-size: 1em;
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   line-height: 2em;
 }
 
 #aboutUs #aboutContent a button {
   margin: 3rem 0;
   padding: 1rem;
+  font-family: 'Butler Light', sans-serif;
+  letter-spacing: 2px;
   border-radius: 2rem;
   font-weight: 600;
   box-shadow: 1px 1px #242424;
@@ -288,6 +259,33 @@ Main Components
   border: none;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+  #aboutUs #aboutContent {
+    padding: 10em 10em;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  #aboutUs #aboutContent #aboutPhrase, #aboutUs #aboutContent #aboutPara {
+    width: 100%;
+  }
+  #aboutUs #aboutContent {
+    padding: 10em 8em;
+  }
+}
+
+@media screen and (max-width:800px) {
+  #aboutUs #aboutContent {
+    padding: 10em 6em;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #aboutUs #aboutContent {
+    padding: 10em 1rem;
+  }
 }
 
 /* -------------------------------- 
@@ -311,7 +309,7 @@ Main Components
   color: #ffffff;
   display: inline-block;
   font-size: 6.5rem;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Butler Bold', sans-serif;
   font-weight: bold;
   pointer-events: none;
   z-index: 10;
@@ -386,6 +384,7 @@ Main Components
 
 #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1 {
   color: #ffffff;
+  font-family: 'Butler Extra Light', serif;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   line-height: 1.4;
@@ -404,6 +403,58 @@ Main Components
   transition: opacity 0.7s ease 0s;
 }
 
+@media screen and (max-width: 1100px) {
+  #portfolio #portfolioSection #portfolioHeading {
+    left: 5%;
+  }
+  #portfolio #portfolioSection #portfolioImagesSection {
+    margin-left: 15%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages {
+    width: 40%;
+    height: 30%;
+  }
+  #portfolio #portfolioSection #portfolioImagesSection {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio{
+    height: 110vh;
+  }
+  #portfolio #portfolioSection #portfolioImagesSection {
+    top: 1%;
+  }
+  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #portfolio #portfolioSection #portfolioImagesSection{
+    margin: auto;
+    width: 100%;
+    height: 80%;
+  }
+  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages {
+    width: 45% ;
+    height: 25%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1{
+    top: -20%;
+  }
+  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1{
+    font-size: 0.8rem;
+  }
+}
 /* -------------------------------- 
 
 Main Components 
@@ -413,7 +464,7 @@ Main Components
 /* Items Section */
 
 #someItems {
-  height: 180vh;
+  height: 200vh;
 }
 
 .blackBg {
@@ -426,7 +477,7 @@ Main Components
 }
 
 #someItems .blackBg #itemSection {
-  height: 120%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -440,6 +491,7 @@ Main Components
 
 #someItems .blackBg #itemSection #itemContentPic1 {
   width: 40%;
+  height: 50%;
   background: url('../img/img6.jpeg') no-repeat center center/cover;
   border-radius: 5px;
 }
@@ -454,9 +506,10 @@ Main Components
 #someItems .blackBg #itemSection #itemContentText1 h1 {
   display: inline-block;
   color: orange;
-  font-size: 6rem;
+  font-size: 5rem;
+  font-family: 'Butler', serif;
   width: 100%;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -472,13 +525,18 @@ Main Components
 }
 
 #someItems .blackBg #itemSection #itemContentText2 div h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-family: 'Butler', serif;
+  text-transform: capitalize;
   line-height: 1.3em;
   margin-bottom: 1em;
 }
 
 #someItems .blackBg #itemSection #itemContentText2 div p {
   font-size: 1.5rem;
+  font-family: 'Butler Extra Light', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
   line-height: 2em;
 }
 
@@ -489,8 +547,32 @@ Main Components
   height: 40%;
 }
 
+@media (max-width: 1200px){
+  .blackBg{
+    padding: 12.5% 5%;
+  }
+  #someItems .blackBg #itemSection #itemContentPic1{
+    height: 30%;
+  }
+}
+@media (max-width: 800px){
+  #someItems .blackBg #itemSection #itemContentText1 h1 {
+    font-size: 4rem;
+    transform: translateY(100px);
+  }
+}
+@media (max-width: 700px){
+  #someItems .blackBg #itemSection{
+    flex-direction: column;
+  }
+  #someItems .blackBg #itemSection > div{
+    width: 100% !important;
+    height: 25% !important;
+  }
+}
 
-#bgAttached{
+
+#bgAttached {
   height: 100vh;
   background: rgba(0, 0, 0, 0.9) url('../img/bgPic1.jpg') no-repeat center center/cover;
   background-attachment: fixed;

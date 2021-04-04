@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const exphbs = require('hbs');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -17,19 +18,27 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.render('index');
-});
-
-app.get('/contact', (req, res) => {
-  res.render('contact');
+  res.render('home');
 });
 
 app.get('/about', (req, res) => {
   res.render('about');
 });
 
+app.get('/items', (req, res) => {
+  res.render('items');
+});
+
+app.get('/infraAndTeam', (req, res) => {
+  res.render('infraAndTeam');
+});
+
 app.get('/career', (req, res) => {
   res.render('career');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact');
 });
 
 app.post('/contact', (req, res) => {
@@ -78,4 +87,4 @@ app.post('/contact', (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log('Server started...'));
+app.listen(port, () => console.log(`Server running at http://127.0.0.1:3000/`));

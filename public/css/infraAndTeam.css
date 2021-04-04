@@ -19,25 +19,8 @@ body {
     overflow-x: hidden;
 }
 
-/* .header {
-    box-sizing: border-box;
-    min-height: 100vh;
-    position: relative;
-    transform-style: inherit;
-    width: 100vw;
-    text-align: center;
-    text-transform: uppercase;
-} */
-
-/* .header h1 {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
-
-.header, .header:before {
+.header,
+.header:before {
     background: 50% 50% / cover;
 }
 
@@ -49,17 +32,17 @@ body {
     right: 0;
     bottom: 0;
     display: block;
-    background: rgba(0,0,0,0.4) url('https://media.istockphoto.com/photos/about-us-picture-id114283644?k=6&m=114283644&s=612x612&w=0&h=zK1fqLDaJkyCelAzBM8J9DKeoTW6ok5u2lJUKGJuXvw=');
+    background: rgba(0, 0, 0, 0.3) url('../img/infrastructure.jpg');
     background-blend-mode: darken;
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
     min-height: 100vh;
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
-.container {
+.Container {
     z-index: 2;
     position: absolute;
     top: 100vh;
@@ -69,18 +52,17 @@ body {
     font-weight: lighter;
     padding: 40px;
     color: grey;
-    text-transform: capitalize;
-    opacity: .93;
+    text-transform:capitalize ;
+    opacity: .83;
 }
 
-.container__About h1 {
+.container__career h1{
     display: flex;
     justify-content: center;
     margin-top: 3.7em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     font-size: 2.5em;
-    /* color: black; */
-    color: white;
+    color: black;
 }
 
 .header {
@@ -90,29 +72,31 @@ body {
     justify-content: space-between;
 }
 
+
 .logo {
     margin-left: 2em;
     margin-top: 1em;
-    /* color: black; */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.4em;
+   color: black;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 1.4em;
 }
 
-.container__About {
+.container__career {
     height: 100vh;
+    
 }
 
 .line {
     align-self: end;
     width: 50%;
-    border-right: 1px solid white;
+    border-right: 1px solid gray;
     height: 40%;
+    /* margin-bottom: 2em; */
     position: relative;
     top: 10%;
+    
 }
-
 .line::after {
     content: ' ';
     position: absolute;
@@ -125,37 +109,50 @@ body {
     bottom: -2px;
 }
 
-.ul {
+.left{
     display: flex;
-    font-size: 1.1em;
-    margin-bottom: 2em;
+    flex-direction: row;
 }
 
-.ul>.li {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 0 .1rem;
-}
-
-.container p {
-    font-size: 1.1em;
-}
-
-.card {
-    width: 27%;
-    height: 30%;
-    border: 1px solid grey;
-    padding: 3px 8px;
-    margin: 2em;
-    /* box-shadow: 2px white; */
-}
-
-.card__Container {
+.right{
     display: flex;
+    flex-direction: row;
 }
 
-.aim {
-    border: 1px solid grey;
-    padding: 3px 8px;
-    margin: 2em;
+#box1{
+    border: 2px solid orangered;
+    width: 45%;
+    margin: 30px;
+}
+
+#box2{
+    border: 2px solid orangered;
+    width: 55%;
+    margin: 20px;
+    margin-left: 20px;
+
+}
+#box3{
+    border: 2px solid orangered;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 900px){
+    .left{
+        display: flex;
+        flex-direction: column;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+    }
+    #box1,#box2,#box3{
+        width: 90%;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
 }
