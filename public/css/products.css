@@ -57,36 +57,35 @@ body {
     right: 0;
     bottom: 0;
     display: block;
-    background: rgba(0, 0, 0, 0.3) url('../img/infrastructureBgPic.jpg');
+    background: rgba(0, 0, 0, 0.5) url('../img/productsBgPic.jpg');
     background-blend-mode: darken;
     background-size: cover;
     transform-origin: center center 0;
     transform: translateZ(-1px) scale(2);
     z-index: -1;
     min-height: 100vh;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
-.Container {
+.container {
     z-index: 2;
     position: absolute;
     top: 100vh;
-    /* background: grey; */
-    background: black;
+    background: grey;
     line-height: 30px;
     font-weight: lighter;
     padding: 40px;
     color: grey;
     text-transform: capitalize;
-    opacity: .83;
+    opacity: .95;
 }
 
-.container__career h1 {
+.container__About h1 {
     display: flex;
     justify-content: center;
     margin-top: 1.5em;
-    font-size: 6em;
     font-family: "Butler", serif;
+    font-size: 8em;
     text-transform: uppercase;
     letter-spacing: 3px;
     /* color: black; */
@@ -103,6 +102,7 @@ body {
 .logo {
     margin-left: 2rem;
     margin-top: 4rem;
+    /* color: black; */
     color: white;
     text-decoration: none;
     font-family: 'Butler Light', serif;
@@ -112,11 +112,12 @@ body {
     font-size: 3rem;
     transition: color 0.5s;
 }
-.logo:hover{
+
+.logo:hover {
     color: orange;
 }
 
-.container__career {
+.container__About {
     height: 100vh;
 }
 
@@ -125,8 +126,8 @@ body {
     width: 50%;
     border-right: 1px solid white;
     height: 30%;
+    top: 15%;
     position: relative;
-    top: 25%;
 }
 
 .line::after {
@@ -141,50 +142,112 @@ body {
     bottom: -2px;
 }
 
-.left {
-    display: flex;
-    flex-direction: row;
+.cards {
+    width: 100%;
+    height: auto;
 }
 
-.right {
-    display: flex;
-    flex-direction: row;
+.card {
+    margin: 6%;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 21.25%;
+    border-radius: 12px;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+    float: left;
 }
 
-#box1 {
-    border: 2px solid orangered;
-    width: 45%;
-    margin: 30px;
+.card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+    /* overflow: hidden; */
 }
 
-#box2 {
-    border: 2px solid orangered;
-    width: 55%;
-    margin: 20px;
-    margin-left: 20px;
+.card__img {
+    object-fit: cover;
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
-#box3 {
-    border: 2px solid orangered;
-    display: flex;
-    flex-direction: row;
-    width: 85%;
-    margin-top: 10px;
-    margin-left: 80px;
+.card__img:hover {
+    transform: scale(1.01);
+    overflow: hidden;
 }
 
-@media only screen and (max-width: 900px) {
-    .left {
+.card__info {
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+    text-align: center;
+}
+
+.card__category {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+    background-color: #fff;
+}
+
+.card__title {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: black;
+    background-color: #fff;
+    margin: 2px;
+}
+
+#Button {
+    color: #868686;
+    background-color: #fff;
+}
+
+button {
+    padding: 5px 8px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 15px;
+    color: #868686;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+@media (min-width:510px) and (max-width:831px) {
+    .card {
+        float: none;
+        margin: 5%;
+        width: 80%;
+    }
+    .cards {
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
-    .right {
-        display: flex;
-        flex-direction: column;
+}
+
+@media (max-width:510px) {
+    .card {
+        float: none;
+        margin: 5%;
+        width: 70%;
     }
-    #box1, #box2, #box3 {
-        width: 90%;
-        margin-right: 10px;
-        margin-left: 5px;
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }

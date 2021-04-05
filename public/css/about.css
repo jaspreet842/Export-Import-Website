@@ -1,10 +1,36 @@
+/* Font Family */
+
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler/Butler_Medium.otf');
+}
+
+@font-face {
+    font-family: 'Butler Bold';
+    src: url('../fonts/Butler/Butler_Bold.otf');
+}
+
+@font-face {
+    font-family: 'Butler Extra Bold';
+    src: url('../fonts/Butler/Butler_ExtraBold.otf');
+}
+
+@font-face {
+    font-family: 'Butler Light';
+    src: url('../fonts/Butler/Butler_Light.otf');
+}
+
+@font-face {
+    font-family: 'Butler Extra Light';
+    src: url('../fonts/Butler/Butler_Ultra_Light.otf');
+}
+
 html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -49,7 +75,7 @@ body {
     right: 0;
     bottom: 0;
     display: block;
-    background: rgba(0,0,0,0.4) url('https://media.istockphoto.com/photos/about-us-picture-id114283644?k=6&m=114283644&s=612x612&w=0&h=zK1fqLDaJkyCelAzBM8J9DKeoTW6ok5u2lJUKGJuXvw=');
+    background: rgba(0, 0, 0, 0.6) url('../img/aboutUsBgPic.jpg');
     background-blend-mode: darken;
     background-size: cover;
     transform-origin: center center 0;
@@ -68,7 +94,6 @@ body {
     line-height: 30px;
     font-weight: lighter;
     padding: 40px;
-    color: grey;
     text-transform: capitalize;
     opacity: .93;
 }
@@ -76,9 +101,11 @@ body {
 .container__About h1 {
     display: flex;
     justify-content: center;
-    margin-top: 3.7em;
-    margin-bottom: 3em;
-    font-size: 2.5em;
+    margin-top: 1.5em;
+    font-family: "Butler", serif;
+    font-size: 8em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     /* color: black; */
     color: white;
 }
@@ -91,13 +118,21 @@ body {
 }
 
 .logo {
-    margin-left: 2em;
-    margin-top: 1em;
+    margin-left: 2rem;
+    margin-top: 4rem;
     /* color: black; */
     color: white;
     text-decoration: none;
+    font-family: 'Butler Light', serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 3rem;
+    transition: color 0.5s;
+}
+
+.logo:hover {
+    color: orange;
 }
 
 .container__About {
@@ -108,9 +143,9 @@ body {
     align-self: end;
     width: 50%;
     border-right: 1px solid white;
-    height: 40%;
+    height: 30%;
     position: relative;
-    top: 10%;
+    top: 15%;
 }
 
 .line::after {
@@ -120,7 +155,7 @@ body {
     height: 0;
     border-style: solid;
     border-width: 11px 11px 0 11px;
-    border-color: black transparent transparent transparent;
+    border-color: white transparent transparent transparent;
     right: -.7em;
     bottom: -2px;
 }

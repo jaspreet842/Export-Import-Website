@@ -25,8 +25,8 @@ app.get('/about', (req, res) => {
   res.render('about');
 });
 
-app.get('/items', (req, res) => {
-  res.render('items');
+app.get('/products', (req, res) => {
+  res.render('products');
 });
 
 app.get('/infraAndTeam', (req, res) => {

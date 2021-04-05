@@ -33,17 +33,23 @@ body {
 }
 
 .single-footer {
-  width: 230px;
-}
-
-.single-footer:first-child {
-  width: 400px;
+  /* width: 230px; */
 }
 
 .single-footer h4 {
   text-transform: capitalize;
   font-size: 2em;
+  font-family: "Butler", serif;
+  letter-spacing: 2px;
   margin-bottom: 20px;
+}
+
+.single-footer p {
+  font-family: 'Butler Extra Light', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  letter-spacing: 1px;
+  /* line-height: 2em; */
 }
 
 .footer-social a {
@@ -77,6 +83,7 @@ body {
   transition: color .2s;
   text-transform: capitalize;
   text-decoration: none;
+  font-size: 2rem;
 }
 
 .single-footer ul li a:hover {
@@ -110,24 +117,22 @@ body {
   margin-top: 50px;
 }
 
-@media only screen and (max-width:600px) {
-  .main {
-    width: 320px;
-  }
-  .single-footer:first-child, .single-footer {
-    width: 100%;
-    margin-bottom: 30px;
-  }
+.footer >div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
 }
 
-@media only screen and (max-width: 1200px) {
-  .main {
-    width: 320px;
-    padding-top: 10px;
-  }
-  .single-footer {
-    width: 100%;
-    margin-top: 50px;
-    font-size: 26px;
+@media screen and (max-width: 560px) {
+  .footer{
+    flex-direction: column;
+  }  
+}
+
+@media screen and (max-width: 560px) {
+  .single-footer:first-child h4{
+    font-size: 1.5em;
   }
 }

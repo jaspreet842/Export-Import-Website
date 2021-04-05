@@ -1,18 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* Font Family */
+
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler/Butler_Medium.otf');
 }
 
-#bgImg{
-    background: url('https://www.hdnicewallpapers.com/Walls/Big/House%20and%20Bungalow/Amazing_Home_Interior_wih_Colorful_Pillow.jpg') no-repeat center;
-    background-size: cover;
+@font-face {
+    font-family: 'Butler Bold';
+    src: url('../fonts/Butler/Butler_Bold.otf');
 }
 
- .contactInd{
-    background: rgba(0, 0, 0, 0.75);
+@font-face {
+    font-family: 'Butler Extra Bold';
+    src: url('../fonts/Butler/Butler_ExtraBold.otf');
+}
+
+@font-face {
+    font-family: 'Butler Light';
+    src: url('../fonts/Butler/Butler_Light.otf');
+}
+
+@font-face {
+    font-family: 'Butler Extra Light';
+    src: url('../fonts/Butler/Butler_Ultra_Light.otf');
+}
+
+#bgImg {
+    background: rgba(0, 0, 0, 0.7) url('../img/contactBgPic6.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    background-blend-mode: darken
+}
+
+.contactInd {
     position: relative;
     min-height: 100vh;
     padding: 50px 100px;
@@ -22,24 +41,27 @@
     flex-direction: column;
 }
 
- .contactInd .content{
+.contactInd .content {
     max-width: 800px;
     text-align: center;
 }
 
-.contactInd .content h2{
-    font-size: 36px;
-    font-weight: 500;
+.contactInd .content h2 {
+    font-family: 'Butler Light';
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     color: #fff;
 }
 
-.contactInd .content p{
+.contactInd .content p {
     margin-top: 10px;
     font-weight: 300;
     color: #fff;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -47,30 +69,35 @@
     margin-top: 30px;
 }
 
-.container .contactInfo{
+.container .contactInfo {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.container .contactInfo .box{
+.container .contactInfo .box {
     position: relative;
     padding: 20px 0;
     display: flex;
+    align-items: center;
 }
 
-.container .contactInfo .box .icon{
-    min-width: 60px;
-    height: 60px;
+.container .contactInfo .box .icon {
+    min-width: 7rem;
+    height: 7rem;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 22px;
+    font-size: 2.5rem;
 }
-
-.container .contactInfo .box .text{
+.container .contactInfo .box .icon:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+    background-color: #00bcd4;
+}
+.container .contactInfo .box .text {
     display: flex;
     margin-left: 20px;
     font-size: 16px;
@@ -79,33 +106,43 @@
     font-weight: 300;
 }
 
-.container .contactInfo .box .text h3{
-    font-size: 2rem;
+.container .contactInfo .box .text h3 {
+    font-size: 2.5rem;
     font-weight: 500;
     color: #00bcd4;
     margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Butler', sans-serif;
 }
 
-.contactForm{
+.container .contactInfo .box .text p {
+    font-family: 'Butler Extra Light', sans-serif;
+    font-weight: 600;
+    /* font-size: 1em; */
+    letter-spacing: 1px;
+}
+
+.contactForm {
     width: 40%;
     padding: 40px;
     background: #fff;
 }
 
-.contactForm h2{
-    font-size: 30px;
-    color: #333;
-    font-weight: 500;
+.contactForm h2 {
+    font-family: serif;
+    font-size: 3rem;
+    color: #242424;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.contactForm .inputBox{
+.contactForm .inputBox {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox textarea{
+.contactForm .inputBox input, .contactForm .inputBox textarea {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -116,28 +153,25 @@
     resize: none;
 }
 
-.contactForm .inputBox span{
+.contactForm .inputBox span {
     position: absolute;
     left: 0;
     padding: 5px 0;
-    font-size: 16px;
+    font-family: cursive;
+    font-size: 1.4rem;
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
     color: #666;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span{
+.contactForm .inputBox input:focus~span, .contactForm .inputBox input:valid~span, .contactForm .inputBox textarea:focus~span, .contactForm .inputBox textarea:valid~span {
     color: #e91e63;
     font-size: 12px;
     transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type="submit"]
-{
+.contactForm .inputBox input[type="submit"] {
     width: 100px;
     background: #00bcd4;
     color: #fff;
@@ -148,18 +182,64 @@
     font-size: 18px;
 }
 
-@media (max-width: 991px)
-{
-    .contact{
+.contactForm .inputBox button {
+    box-shadow: 2px 2px grey;
+    background-color: #00bcd4;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-family: 'Butler';
+    font-size: 1.5rem;
+    color: white;
+    border: 1px solid grey;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.contactForm .inputBox button:hover {
+    background-color: orange;
+    transform: scale(0.99);
+    cursor: pointer;
+    box-shadow: none;
+}
+
+@media (max-width: 991px) {
+    .contactForm{
+        width: 80%;
+    }
+    .contact {
         padding: 50px;
     }
-    .container{
+    .container {
         flex-direction: column;
     }
-    .container .contactInfo{
+    .container .contactInfo {
         margin-bottom: 40px;
     }
     .container .contactInfo {
         width: 100%;
     }
-} 
+}
+
+@media (max-width: 660px) {
+    .contactInd{
+        padding: 50px;
+    }
+    .contactForm{
+        width: 100%;
+    }
+}
+
+@media (max-width: 660px) {
+    .contactInd .content h2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 400px){
+    .contactInd .content h2 {
+        font-size: 2.5em;
+    }
+    .contactInd{
+        padding: 50px 10px;
+    }
+}
