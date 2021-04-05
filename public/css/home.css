@@ -28,28 +28,33 @@
 /* Scrolling Effects */
 
 .revealLeft {
+  overflow: hidden;
   opacity: 0;
   transform: translateX(-120%);
   transition: all 1.5s ease;
 }
 
 .activeLeft {
+  overflow: hidden;
   opacity: 1;
   transform: translateX(0%);
 }
 
 .revealLeftSmall {
+  overflow: hidden;
   opacity: 0;
   transform: translateX(-20%);
   transition: all 1.5s ease;
 }
 
 .activeLeftSmall {
+  overflow: hidden;
   opacity: 1;
   transform: translateX(0%);
 }
 
 .revealRight {
+  overflow: hidden;
   opacity: 0;
   transform: translateX(20%);
   transition: all 1.5s ease;
@@ -58,17 +63,20 @@
 .activeRight {
   opacity: 1;
   transform: translateX(0%);
+  overflow: hidden;
 }
 
 .revealBottom {
   opacity: 0;
   transform: translateY(0%);
   transition: all 1.5s ease;
+  overflow: hidden;
 }
 
 .activeBottom {
   opacity: 1;
   transform: translateY(0%);
+  overflow: hidden;
 }
 
 /* -------------------------------- 
@@ -438,7 +446,7 @@ Main Components
 @media screen and (max-width: 510px) {
   #portfolio #portfolioSection #portfolioImagesSection{
     margin: auto;
-    width: 100%;
+    width: 85%;
     height: 80%;
   }
   #portfolio #portfolioSection #portfolioImagesSection .portfolioImages {
@@ -565,16 +573,64 @@ Main Components
   #someItems .blackBg #itemSection{
     flex-direction: column;
   }
+  #someItems .blackBg #itemSection #itemContentText2 div h2 {
+    font-size: 2.7rem;
+  }
+  #someItems .blackBg #itemSection #itemContentText2 div p {
+    font-size: 1.2rem;
+  }
   #someItems .blackBg #itemSection > div{
     width: 100% !important;
-    height: 25% !important;
+    height: 24% !important;
+  }
+  #someItems .blackBg #itemSection #itemContentPic2{
+    height: 19% !important;
   }
 }
 
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+
+/* Contact Section */
 
 #bgAttached {
   height: 100vh;
   background: rgba(0, 0, 0, 0.9) url('../img/bgPic1.jpg') no-repeat center center/cover;
   background-attachment: fixed;
   background-blend-mode: darken;
+}
+#bgAttached #contactsSection{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#bgAttached #contactsSection .contactContent{
+  border-radius: 10px;
+  width: 40%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+#bgAttached #contactsSection .contactContent .contactDetails{
+  color: black;
+  margin: 3rem 0;
+}
+#bgAttached #contactsSection .contactContent h1{
+  font-size: 3.5rem;
+  font-family: "Butler", serif;
+  font-weight: 600;
+}
+#bgAttached #contactsSection .contactContent h2{
+  font-size: 2.5rem;
+  font-family: "Butler Extra Light", serif;
+  font-weight: 600;
 }

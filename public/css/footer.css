@@ -16,7 +16,7 @@ body {
   background: -moz-linear-gradient(left, #242424 0%, #242424 100%);
   background: -webkit-linear-gradient(left, #242424 0%, #242424 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2749c4', endColorstr='#6085b2', GradientType=1);
-  color: #fff;
+  color: #ffffff;
   position: relative;
 }
 
@@ -47,8 +47,8 @@ body {
 }
 
 .footer-social a {
-  color: #fff;
-  border: 1px solid #fff;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -73,7 +73,7 @@ body {
 }
 
 .single-footer ul li a {
-  color: #fff;
+  color: #ffffff;
   transition: color .2s;
   text-transform: capitalize;
   text-decoration: none;
@@ -114,9 +114,6 @@ body {
   .main {
     width: 320px;
   }
-  .footer-wave-box {
-    display: none;
-  }
   .single-footer:first-child, .single-footer {
     width: 100%;
     margin-bottom: 30px;
@@ -128,18 +125,9 @@ body {
     width: 320px;
     padding-top: 10px;
   }
-  .footer-wave-box {
-    top: -22px;
-  }
   .single-footer {
     width: 100%;
     margin-top: 50px;
     font-size: 26px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .footer-wave-box {
-    top: -26px;
   }
 }

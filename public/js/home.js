@@ -96,3 +96,12 @@ for (var i = 0; i < hoverBox.length; i++) {
 };
 
 
+// Clicking arrow at the heading of the home page
+
+var blackArrow = document.getElementById('lineBlack');
+blackArrow.addEventListener('click',(e)=>{
+	console.log(blackArrow);
+	var aboutSectionTop = document.getElementById('aboutUs').getBoundingClientRect().top;
+	console.log(aboutSectionTop);
+	window.scrollTo(0, aboutSectionTop);
+});

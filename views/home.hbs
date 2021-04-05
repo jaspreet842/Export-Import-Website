@@ -83,7 +83,7 @@
                     </span>
                     <em>About</em>
                 </a>
-            </li>            
+            </li>
             <li data-menu="projects">
                 <a href="/items">
                     <span>
@@ -115,7 +115,7 @@
                             </g>
                         </svg>
                     </span>
-                    <em>Items</em>
+                    <em>Products</em>
                 </a>
             </li>
             <li data-menu="services">
@@ -245,9 +245,9 @@
     <div id="lineBlack"
         style="width: 100%; height: 5vh; background: rgba(0, 0, 0, 0.65); display: flex; align-items: center; justify-content: center;">
         <div id="arrowToSlide">
-            <a href="#aboutUs" style="text-decoration: none; color: white;">
-                <i class="bi bi-chevron-double-down" style="font-size: 2em;"></i>
-            </a>
+            {{!-- <a href="/" style="text-decoration: none; color: white;"> --}}
+                <i class="bi bi-chevron-double-down" style="font-size: 2em; color: white;"></i>
+                {{!-- </a> --}}
         </div>
     </div>
 
@@ -331,57 +331,56 @@
     </section>
 
     <section id="bgAttached">
-        
+        <div id="contactsSection">
+            <div class="contactContent" id="contactBlock1">
+                <h1 class="contactDetails contactBox1">Head Office</h1>
+                <h2 class="contactDetails contactBox1">Lorem ipsum dolor sit.</h2>
+                <h2 class="contactDetails contactBox1">Telephone No.: 011-xxxxxxxx</h2>
+                <h2 class="contactDetails contactBox1">Email- info.bajraexports919@gmail.com</h2>
+            </div>
+            <div class="contactContent" id="contactBlock2">
+                <h1 class="contactDetails contactBox2">Showroom</h1>
+                <h2 class="contactDetails contactBox2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+                <h2 class="contactDetails contactBox2">Mobile No.: +91-xxxxxxxxxx</h2>
+                <h2 class="contactDetails contactBox2">Email- info.bajraexports919@gmail.com</h2>
+            </div>
+        </div>
     </section>
 
     <footer class="footer-area">
-        {{!-- <div class="footer-wave-box">
-            <div class="footer-wave footer-animation"></div>
-        </div> --}}
         <div class="main">
             <div class="footer">
                 <div class="single-footer">
-                    <h4>BAJRA EXPORTS</h4>
-                    <p>Lorem ipsum dolor sit amet, di dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint qui officia deserunt Excepteur.</p>
+                    <h4 style="display: flex; align-items: center; margin-left: -1rem;"><img
+                            src="../public/img/favicon.ico" style="border-radius: 20em;">BAJRA EXPORTS</h4>
+                    <p>Where outstanding products are available.</p>
                     <div class="footer-social">
                         <a href="" id="facebook"><i class="bi bi-facebook"></i></a>
                         <a href="" id="twitter"><i class="bi bi-twitter"></i></a>
                         <a href="" id="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="" id="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="single-footer">
-                    <h4>main menu</h4>
+                    <h4>quick links</h4>
                     <ul>
                         <li><a href="/"><i class="fas fa-chevron-right"></i> home</a></li>
                         <li><a href="/about"><i class="fas fa-chevron-right"></i> about us</a></li>
-                        <li><a href="/items"><i class="fas fa-chevron-right"></i> items</a></li>
+                        <li><a href="/items"><i class="fas fa-chevron-right"></i> products</a></li>
                         <li><a href="/infraAndTeam"><i class="fas fa-chevron-right"></i> infrastructure</a></li>
                         <li><a href="/career"><i class="fas fa-chevron-right"></i> careers</a></li>
                         <li><a href="/contact"><i class="fas fa-chevron-right"></i> contact us</a></li>
                     </ul>
                 </div>
-                <!-- <div class="single-footer">
-                    <h4>quick links</h4>
-                    <ul>
-                        <li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
-                        <li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
-                        <li><a href=""><i class="fas fa-chevron-right"></i> disclaimer</a></li>
-                    </ul>
-                </div> -->
                 <div class="single-footer">
-                    <!-- <h4>contact us</h4>
-                    <ul>
-                        <li><a href=""><i class="fas fa-map-marker-alt"></i> North Street, Sydney, Australia</a></li>
-                        <li><a href=""><i class="fas fa-mobile-alt"></i> +88 0123 456 789</a></li>
-                        <li><a href=""><i class="far fa-envelope"></i> info@demo.com</a></li>
-                        <li><a href=""><i class="fas fa-globe-europe"></i> www.demo.com</a></li>
-                    </ul> -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4780271964664!2d77.16632621440756!3d28.645402190250664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02941327385d%3A0x2158dee89bc8ffa7!2sKalindi%20College!5e0!3m2!1sen!2sin!4v1617398341518!5m2!1sen!2sin" width="240" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4780271964664!2d77.16632621440756!3d28.645402190250664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02941327385d%3A0x2158dee89bc8ffa7!2sKalindi%20College!5e0!3m2!1sen!2sin!4v1617398341518!5m2!1sen!2sin"
+                        width="240" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
             <div class="copy">
-                <p>&copy BAJRA EXPORTS <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+                <p>&copy BAJRA EXPORTS
+                    <script>document.write(new Date().getFullYear())</script>. All Rights Reserved
+                </p>
             </div>
         </div>
     </footer>
