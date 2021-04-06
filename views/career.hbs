@@ -238,10 +238,7 @@
 
     <div class="Container">
         <h1>A company is nothing without its employees.</h1>
-        <p>
-            As artist Pablo Picasso famously remarked, "inspiration exists, but it has to find you working." Indeed, the
-            notable rewards you'll reap down the road will be worth every ounce of energy you invest now!
-        </p>
+        <p>"Inspiration exists, but it has to find you working."</p>
         <div class="career">
             <img src="https://thumbs.dreamstime.com/b/career-development-ascend-concept-young-businesswoman-business-sketch-concrete-background-134000816.jpg"
                 alt="Career_Image">
@@ -250,24 +247,31 @@
                     We are always on the lookout for young and talented individuals with a knack for creativity and
                     innovation to join our growing family. If you identify yourself as a creative person who'd love
                     exploring his/her talent and skills in a vibrant atmosphere, then you better grab the opportunity
-                    and send in your resume to us at info@chiragexport.com
+                    and send in your resume to us at info.bajraexport919@gmail.com
                 </p>
-                <form>
+                <form style="outline: none;" !important>
+                    <input class="formInputs" type="text" name="name" id="name" placeholder="Full Name">
+                    <input class="formInputs" type="email" name="email" id="email" placeholder="What's your email?">
+                    <textarea class="formInputs" name="question" id="question"
+                        placeholder="Something about yourself..."></textarea>
+                    <button class="sendBtn" type="submit" style="outline: none; !important">SEND</button>
+                </form>
+                {{!-- <form method="POST" action="/career">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <label for="exampleInputEmail1" class="form-label">Name</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <label for="exampleInputPassword1" class="form-label">Email</label>
                         <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Something about you</label>
+                        <input type="password" class="form-control">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                </form> --}}
             </div>
         </div>
         <!-- <footer class="footer-area">
