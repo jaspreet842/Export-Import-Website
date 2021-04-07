@@ -219,3 +219,10 @@ body {
 .sendBtn:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 600px) {
+    .container__career h1 {
+        font-size: 6em;
+        margin-top: 2.5em;
+    }
+}
