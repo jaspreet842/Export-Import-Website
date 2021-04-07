@@ -113,7 +113,8 @@ body {
     font-size: 3rem;
     transition: color 0.5s;
 }
-.logo:hover{
+
+.logo:hover {
     color: rgb(213, 101, 27);
 }
 
@@ -143,12 +144,12 @@ body {
     bottom: -2px;
 }
 
-.Container h1{
+.Container h1 {
     font-size: 3rem;
     font-family: "Butler", serif;
 }
 
-.Container > p{
+.Container>p {
     margin-bottom: 5rem;
 }
 
@@ -160,7 +161,7 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .career img{
+    .career img {
         display: none;
     }
 }
@@ -175,6 +176,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
+
 /* 
 .career__pc form {
     display: flex;
@@ -190,7 +192,8 @@ body {
     align-items: center;
     padding: 2rem;
 } */
-.formInputs{
+
+.formInputs {
     letter-spacing: 1px;
     width: 100%;
     margin: 1rem 0;
@@ -199,7 +202,8 @@ body {
     border-radius: 3rem;
     outline: none;
 }
-.sendBtn{
+
+.sendBtn {
     /* width: 50%; */
     border: none;
     letter-spacing: 2px;
@@ -211,6 +215,7 @@ body {
     background: rgb(213, 101, 27);
     transition: all 0.5s ease 0s;
 }
-.sendBtn:hover{
+
+.sendBtn:hover {
     transform: scale(1.05);
 }
