@@ -126,11 +126,7 @@ body {
     border-right: 1px solid white;
     height: 30%;
     position: relative;
-<<<<<<< HEAD
-    top: 21%;
-=======
     top: 26%;
->>>>>>> dcaafedc58624fef398a6f3ab51d1f121a330864
 }
 
 .line::after {
