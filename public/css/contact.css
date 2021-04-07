@@ -196,7 +196,7 @@
 }
 
 .contactForm .inputBox button:hover {
-    background-color: orange;
+    background-color: rgb(213, 101, 27);
     transform: scale(0.99);
     cursor: pointer;
     box-shadow: none;

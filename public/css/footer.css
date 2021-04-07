@@ -32,10 +32,6 @@ body {
   flex-direction: row;
 }
 
-.single-footer {
-  /* width: 230px; */
-}
-
 .single-footer h4 {
   text-transform: capitalize;
   font-size: 2em;
