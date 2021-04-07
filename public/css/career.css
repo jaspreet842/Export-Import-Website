@@ -226,3 +226,30 @@ body {
         margin-top: 2.5em;
     }
 }
+
+@media (max-width: 460px) {
+    .container__career h1 {
+        font-size: 5em;
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo{
+        font-size: 2.5rem;
+    }
+    .container__career h1 {
+        font-size: 4em;
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 350px) {
+    .logo{
+        font-size: 2rem;
+    }
+    .container__career h1{
+        font-size: 3.5em;
+        margin-top: 5em;
+    }
+}
