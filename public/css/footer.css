@@ -32,10 +32,6 @@ body {
   flex-direction: row;
 }
 
-.single-footer {
-  /* width: 230px; */
-}
-
 .single-footer h4 {
   text-transform: capitalize;
   font-size: 2em;
@@ -87,7 +83,7 @@ body {
 }
 
 .single-footer ul li a:hover {
-  color: orange;
+  color: rgb(213, 101, 27);
 }
 
 .single-footer ul li a i {

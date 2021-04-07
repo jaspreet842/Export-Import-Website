@@ -227,7 +227,7 @@ Main Components
 }
 
 #aboutUs #aboutContent #aboutHeading span {
-  color: orange;
+  color: rgb(213, 101, 27);
   text-decoration: underline;
   font-family: 'Butler Bold', sans-serif;
   letter-spacing: 2px;
@@ -262,7 +262,7 @@ Main Components
 
 #aboutUs #aboutContent a button:hover {
   color: white;
-  background-color: orange;
+  background-color: rgb(213, 101, 27);
   outline: none;
   border: none;
   text-decoration: none;
@@ -513,7 +513,7 @@ Main Components
 
 #someItems .blackBg #itemSection #itemContentText1 h1 {
   display: inline-block;
-  color: orange;
+  color: rgb(213, 101, 27);
   font-size: 5rem;
   font-family: 'Butler', serif;
   width: 100%;
@@ -611,7 +611,7 @@ Main Components
   margin: auto;
 }
 #bgAttached #contactsSection .contactContent{
-  border-top: 10px solid orange;
+  border-top: 10px solid rgb(213, 101, 27);
   border-radius: 10px;
   width: 30%;
   height: 60%;
@@ -636,8 +636,8 @@ Main Components
   font-family: serif;
 }
 #bgAttached #contactsSection .contactContent .emailBox{
-  color: orange;
-  border: 1px solid orange;
+  color: rgb(213, 101, 27);
+  border: 1px solid rgb(213, 101, 27);
   background-color: #ffffff;
   text-align: center;
   padding: 1rem 0;
@@ -648,8 +648,8 @@ Main Components
 }
 #bgAttached #contactsSection .contactContent .emailBox:hover{
   cursor: context-menu;
-  box-shadow: 0 0 2px orange;
-  text-shadow: 0 0 0.5px orange;
+  box-shadow: 0 0 2px rgb(213, 101, 27);
+  text-shadow: 0 0 0.5px rgb(213, 101, 27);
 }
 @media screen and (max-width: 1300px) {
   #bgAttached #contactsSection .contactContent{

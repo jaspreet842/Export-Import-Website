@@ -113,7 +113,7 @@ body {
     transition: color 0.5s;
 }
 .logo:hover{
-    color: orange;
+    color: rgb(213, 101, 27);
 }
 
 .container__career {
@@ -153,7 +153,7 @@ body {
 }
 
 #box1 {
-    border-top: 5px solid orange;
+    border-top: 5px solid rgb(213, 101, 27);
     width: 47%;
     margin: 30px;
     border-radius: 10px;
@@ -178,7 +178,7 @@ body {
 }
 
 #box2 {
-    border-top: 5px solid orange;
+    border-top: 5px solid rgb(213, 101, 27);
     width: 57%;
     margin: 20px;
     padding: 2rem;
@@ -203,7 +203,7 @@ body {
 }
 
 #box3 {
-    border-top: 5px solid orange;
+    border-top: 5px solid rgb(213, 101, 27);
     width: 100%;
     margin-top: 10px;
     margin-left: 80px;

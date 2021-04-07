@@ -114,7 +114,7 @@ body {
     transition: color 0.5s;
 }
 .logo:hover{
-    color: orange;
+    color: rgb(213, 101, 27);
 }
 
 .container__career {
@@ -208,7 +208,7 @@ body {
     color: white;
     border-radius: 30px;
     padding: 1rem 3rem;
-    background: orange;
+    background: rgb(213, 101, 27);
     transition: all 0.5s ease 0s;
 }
 .sendBtn:hover{
