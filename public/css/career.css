@@ -129,7 +129,7 @@ body {
     height: 30%;
     /* margin-bottom: 2em; */
     position: relative;
-    top: 15%;
+    top: 9%;
 }
 
 .line::after {
@@ -218,4 +218,11 @@ body {
 
 .sendBtn:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .container__career h1 {
+        font-size: 6em;
+        margin-top: 2.5em;
+    }
 }
