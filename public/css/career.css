@@ -68,15 +68,16 @@ body {
 }
 
 .Container {
+    text-align: center;
     z-index: 2;
     position: absolute;
     top: 100vh;
     /* background: grey; */
-    background: black;
+    background: grey;
     line-height: 30px;
     font-weight: lighter;
     padding: 40px;
-    color: grey;
+    color: white;
     text-transform: capitalize;
     opacity: .93;
 }
@@ -89,7 +90,6 @@ body {
     font-size: 8em;
     text-transform: uppercase;
     letter-spacing: 10px;
-    /* color: black; */
     color: white;
 }
 
@@ -113,8 +113,9 @@ body {
     font-size: 3rem;
     transition: color 0.5s;
 }
-.logo:hover{
-    color: orange;
+
+.logo:hover {
+    color: rgb(213, 101, 27);
 }
 
 .container__career {
@@ -143,9 +144,26 @@ body {
     bottom: -2px;
 }
 
+.Container h1 {
+    font-size: 3rem;
+    font-family: "Butler", serif;
+}
+
+.Container>p {
+    margin-bottom: 5rem;
+}
+
 .career img {
-    width: 50%;
-    margin-right: 2em;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 2px;
+    width: 45%;
+    margin: 0 2em;
+}
+
+@media screen and (max-width: 800px) {
+    .career img {
+        display: none;
+    }
 }
 
 .career {
@@ -159,7 +177,45 @@ body {
     justify-content: space-around;
 }
 
+/* 
 .career__pc form {
     display: flex;
     flex-direction: column;
+}
+
+.career__pc form{
+    font-family: "Butler", serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+} */
+
+.formInputs {
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 3rem;
+    outline: none;
+}
+
+.sendBtn {
+    /* width: 50%; */
+    border: none;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 30px;
+    padding: 1rem 3rem;
+    background: rgb(213, 101, 27);
+    transition: all 0.5s ease 0s;
+}
+
+.sendBtn:hover {
+    transform: scale(1.05);
 }
