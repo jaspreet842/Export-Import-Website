@@ -109,14 +109,20 @@ Main Components
   color: white;
 }
 
+#headerLogo span {
+  color: rgb(0, 0, 65) !important;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: red;
+}
+
 #headerContent #headerLogo {
   position: absolute;
   letter-spacing: 3px;
-  top: 4em;
-  left: 10%;
+  top: 2em;
+  left: 8%;
   font-family: 'Butler Bold', serif;
-  font-size: 2em;
-  font-weight: 300;
+  font-size: 3em;
+  font-weight: bolder;
   opacity: 0;
   animation: headNameTagBg 1s linear 0.5s 1 normal;
   animation-fill-mode: forwards;
@@ -208,7 +214,7 @@ Main Components
 /* About Section */
 
 #aboutUs {
-  background: url('../img/slider1.jpg') no-repeat center center/cover;
+  background: url('../img/bgBhaiya.JPG') no-repeat center center/cover;
   background-attachment: fixed;
 }
 
@@ -432,37 +438,38 @@ Main Components
 }
 
 @media screen and (max-width: 600px) {
-  #portfolio{
+  #portfolio {
     height: 110vh;
   }
   #portfolio #portfolioSection #portfolioImagesSection {
     top: 1%;
   }
-  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1{
+  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1 {
     font-size: 1rem;
   }
 }
 
 @media screen and (max-width: 510px) {
-  #portfolio #portfolioSection #portfolioImagesSection{
+  #portfolio #portfolioSection #portfolioImagesSection {
     margin: auto;
     width: 85%;
     height: 80%;
   }
   #portfolio #portfolioSection #portfolioImagesSection .portfolioImages {
-    width: 45% ;
+    width: 45%;
     height: 25%;
   }
 }
 
 @media screen and (max-width: 510px) {
-  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1{
+  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1 {
     top: -20%;
   }
-  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1{
+  #portfolio #portfolioSection #portfolioImagesSection .portfolioImages h1 {
     font-size: 0.8rem;
   }
 }
+
 /* -------------------------------- 
 
 Main Components 
@@ -555,22 +562,24 @@ Main Components
   height: 40%;
 }
 
-@media (max-width: 1200px){
-  .blackBg{
+@media (max-width: 1200px) {
+  .blackBg {
     padding: 12.5% 5%;
   }
-  #someItems .blackBg #itemSection #itemContentPic1{
+  #someItems .blackBg #itemSection #itemContentPic1 {
     height: 30%;
   }
 }
-@media (max-width: 800px){
+
+@media (max-width: 800px) {
   #someItems .blackBg #itemSection #itemContentText1 h1 {
     font-size: 4rem;
     transform: translateY(100px);
   }
 }
-@media (max-width: 700px){
-  #someItems .blackBg #itemSection{
+
+@media (max-width: 700px) {
+  #someItems .blackBg #itemSection {
     flex-direction: column;
   }
   #someItems .blackBg #itemSection #itemContentText2 div h2 {
@@ -579,11 +588,11 @@ Main Components
   #someItems .blackBg #itemSection #itemContentText2 div p {
     font-size: 1.2rem;
   }
-  #someItems .blackBg #itemSection > div{
+  #someItems .blackBg #itemSection>div {
     width: 100% !important;
     height: 24% !important;
   }
-  #someItems .blackBg #itemSection #itemContentPic2{
+  #someItems .blackBg #itemSection #itemContentPic2 {
     height: 19% !important;
   }
 }
@@ -602,7 +611,8 @@ Main Components
   background-attachment: fixed;
   background-blend-mode: darken;
 }
-#bgAttached #contactsSection{
+
+#bgAttached #contactsSection {
   width: 100%;
   height: 100%;
   display: flex;
@@ -610,7 +620,8 @@ Main Components
   align-items: center;
   margin: auto;
 }
-#bgAttached #contactsSection .contactContent{
+
+#bgAttached #contactsSection .contactContent {
   border-top: 10px solid rgb(213, 101, 27);
   border-radius: 10px;
   width: 30%;
@@ -622,20 +633,23 @@ Main Components
   justify-content: space-around;
   box-shadow: 2px 2px grey;
 }
-#bgAttached #contactsSection .contactContent h1{
+
+#bgAttached #contactsSection .contactContent h1 {
   font-size: 3rem;
   color: #202020;
   text-transform: capitalize;
   font-family: serif;
   font-weight: bold;
 }
-#bgAttached #contactsSection .contactContent h2{
+
+#bgAttached #contactsSection .contactContent h2 {
   font-size: 2rem;
   font-weight: 400;
   color: grey;
   font-family: serif;
 }
-#bgAttached #contactsSection .contactContent .emailBox{
+
+#bgAttached #contactsSection .contactContent .emailBox {
   color: rgb(213, 101, 27);
   border: 1px solid rgb(213, 101, 27);
   background-color: #ffffff;
@@ -646,29 +660,33 @@ Main Components
   border-radius: 12em;
   transition: all 0.3s;
 }
-#bgAttached #contactsSection .contactContent .emailBox:hover{
+
+#bgAttached #contactsSection .contactContent .emailBox:hover {
   cursor: context-menu;
   box-shadow: 0 0 2px rgb(213, 101, 27);
   text-shadow: 0 0 0.5px rgb(213, 101, 27);
 }
+
 @media screen and (max-width: 1300px) {
-  #bgAttached #contactsSection .contactContent{
+  #bgAttached #contactsSection .contactContent {
     width: 35%;
   }
 }
+
 @media screen and (max-width: 1100px) {
-  #bgAttached #contactsSection .contactContent{
+  #bgAttached #contactsSection .contactContent {
     width: 40%;
   }
-  #bgAttached #contactsSection .contactContent .emailBox{
+  #bgAttached #contactsSection .contactContent .emailBox {
     width: 90%;
   }
 }
+
 @media screen and (max-width: 900px) {
-  #bgAttached{
+  #bgAttached {
     height: 120vh;
   }
-  #bgAttached #contactsSection{
+  #bgAttached #contactsSection {
     flex-direction: column;
   }
   #bgAttached #contactsSection .contactContent {
@@ -676,26 +694,29 @@ Main Components
     margin: 5rem;
   }
 }
+
 @media screen and (max-width: 700px) {
   #bgAttached #contactsSection .contactContent {
     padding: 2rem;
   }
 }
+
 @media screen and (max-width: 600px) {
   #bgAttached #contactsSection .contactContent {
     margin: 3rem;
     width: 80%;
   }
 }
+
 @media screen and (max-width: 400px) {
   #bgAttached #contactsSection .contactContent {
     margin: 3.5rem;
     width: 90%;
   }
-  #bgAttached #contactsSection .contactContent h1{
+  #bgAttached #contactsSection .contactContent h1 {
     font-size: 2.5rem;
   }
-  #bgAttached #contactsSection .contactContent h2{
+  #bgAttached #contactsSection .contactContent h2 {
     font-size: 1.5rem;
   }
 }
