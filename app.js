@@ -37,25 +37,19 @@ app.get('/career', (req, res) => {
   res.render('career');
 });
 
-app.get('/contact', (req, res) => {
-  res.render('contact');
-});
-
-app.post('/contact', (req, res) => {
-  const output = `
-      <p>New Contact Request</p>
+app.post('/career', (req, res) => {
+  const output1 = `
+      <p>New Request for joining</p>
       <h3>Contact Details</h3>
       <ul>  
-        <li>Name: ${req.body.name}</li>
-        <li>Email: ${req.body.email}</li>
-        <li>Phone: ${req.body.number}</li>
+        <li>Name: ${req.body.name1}</li>
+        <li>Email: ${req.body.email1}</li>
+        <li>Something about yourself: ${req.body.aboutpara}</li>
       </ul>
-      <h3>Message</h3>
-      <p>${req.body.message}</p>
     `;
 
   // create reusable transporter object using the default SMTP transport
-  let transporter = nodemailer.createTransport({
+  let transporter1 = nodemailer.createTransport({
     service: 'gmail',
     host: 'smtp.gmail.com',
     port: 465,
@@ -70,26 +64,30 @@ app.post('/contact', (req, res) => {
   });
 
   // setup email data with unicode symbols
-  let mailOptions = {
+  let mailOptions1 = {
     from: '"BAJRA EXPORTS" <info.bajraexports919@gmail.com>', // sender address
     to: 'jaspreetsingh08042@gmail.com', // list of receivers
-    subject: 'CONTACT REQUEST FROM WEBSITE', // Subject line
-    html: output // html body
+    subject: 'CAREER REQUEST FROM WEBSITE', // Subject line
+    html: output1 // html body
   };
 
   // send mail with defined transport object
-  transporter.sendMail(mailOptions, (error) => {
+  transporter1.sendMail(mailOptions1, (error) => {
     if (error) {
-      res.render('contact', { msg: 'Email has not been sent' });
+      res.render('career', { msg1: 'Email has not been sent' });
       return console.log(error);
     }
-    res.render('contact', { msg: 'Email has been sent' });
+    res.render('career', { msg1: 'Email has been sent' });
   });
 });
 
-app.post('/career', (req, res) => {
+app.get('/contact', (req, res) => {
+  res.render('contact');
+});
+
+app.post('/contact', (req, res) => {
   const output = `
-      <p>New Request for joining</p>
+      <p>New Contact Request</p>
       <h3>Contact Details</h3>
       <ul>  
         <li>Name: ${req.body.name}</li>
